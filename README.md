@@ -5,9 +5,9 @@
 Go to your [https://github.com](https://github.com/) and create a new repository named USERNAME.github.com
 #####2. Install Jekyll-LightCss  
 Enter these commands into your terminal in a directory you want your blog to be:  
-``git clone https://github.com/huleos/jekyll-lightcss.git USERNAME.github.com
-cd USERNAME.github.com
-git remote set-url origin git@github.com:USERNAME/USERNAME.github.com.git
+``git clone https://github.com/huleos/jekyll-lightcss.git USERNAME.github.com  
+cd USERNAME.github.com  
+git remote set-url origin git@github.com:USERNAME/USERNAME.github.com.git  
 git push origin master``
 #####3. Profit  
 After GitHub has a couple minutes to do its magic your blog will be publicly available at http://USERNAME.github.com 
