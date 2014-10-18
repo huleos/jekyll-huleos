@@ -1,7 +1,8 @@
 ---
 layout: page
-title: sobre nosotros
+title: About
 permalink: /about/
+description: Write here the custom description
 group: "navigation"
 ---
 

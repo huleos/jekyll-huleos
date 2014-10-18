@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Pagina de inicio
+title: Homepage
 permalink: /
-description: Descripcion de la pagina de inicio
+description: Write here the custom description
 group: "navigation"
 ---
 

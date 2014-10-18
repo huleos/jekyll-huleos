@@ -5,6 +5,7 @@
 Your title: Julio Cesar Montenegro
 Site: http://jcmontenegro.me
 Twitter: @huleos7
+Github: https://github.com/huleos/
 Location: Mexicali, Mexico
 
 /* SITE */
