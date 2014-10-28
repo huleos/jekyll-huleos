@@ -14,7 +14,7 @@ github_username:  jekyll
 markdown: kramdown
 
 # Customs
-permalink: :title
+permalink: none
 sitemap:
     file: "/sitemap.xml"
     exclude:
