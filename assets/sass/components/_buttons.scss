@@ -14,7 +14,7 @@
 	white-space: nowrap;
 	font-size: $rem-base;
 	line-height: $base-line-height;
-	padding: 1rem 2rem;
+	padding: 16px 32px;
 	user-select: none;
 	@include transition(background-color 300ms ease-out);
 
@@ -43,6 +43,23 @@
 	&:hover{
 		background-color: $btn-default-color;
 		color: $white;
+		border-color: transparent;
+	}
+	&:active{
+		background-color: lighten($black, 28%);
+		&:focus{
+			outline: 0 none;
+		}
+	}
+}
+
+.btn-default.inverse {
+	color: $btn-default-inverse-color;
+	background-color: $btn-default-inverse-bg;
+	border-color: $btn-default-inverse-border;
+	&:hover{
+		background-color: $btn-default-inverse-color;
+		color: $black;
 		border-color: transparent;
 	}
 	&:active{

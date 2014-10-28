@@ -19,14 +19,20 @@
 <body>
 	
 	<!-- Header -->
-	<nav class="nav navbar">
-		<a href="/" class="nav-brand">LightCss</a>
-		<ul class="right">
-			{% assign pages_list = site.pages %}
-			{% assign group = 'navigation' %}
-		  {% include pages_list %}
-		</ul>
-	</nav>
+	<header class="navbar">
+		<section class="navbar-header">
+			<a href="" class="nav-brand">LightCss</a>
+			<a href="#" class="navbar-toggle">Menu</a>
+		</section>
+		
+		<nav class="navbar-collapse">
+			<ul class="right">
+				{% assign pages_list = site.pages %}
+				{% assign group = 'navigation' %}
+				{% include pages_list %}
+			</ul>
+		</nav>
+	</header>
 	<!-- /Header -->
 
   <div class="row">

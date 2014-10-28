@@ -1,7 +1,12 @@
 //
-// Variables
+// Variables ans Functions
 // --------------------------------------------------
 
+// remCal 
+@function remCalc($size) {
+  $remSize: ($size / 16);
+  @return #{$remSize}rem;
+}
 
 // Colors
 // -------------------------
@@ -19,7 +24,7 @@ $white:            lighten(#fff, 100%) !default; // #fff
 // Brand
 $brand-primary:    #428bca !default;
 $brand-success:    #5cb85c !default;
-$brand-alert:    #f1391c !default;
+$brand-alert:      #f1391c !default;
 $brand-info:       #5bc0de !default;
 
 // Scaffolding
@@ -38,24 +43,24 @@ $link-hover-color:      darken($link-color, 15%) !default;
 // -------------------------
 $body-font-size: 100% !default;
 $base-line-height: 1.5 !default;
-$rem-base: 16px !default;
+$rem-base: remCalc(16) !default;
 $base-font-size: $rem-base !default;
 
 $font-sans-serif: 'Source Sans Pro', Helvetica, Arial, sans-serif !default;
 $font-serif: Georgia, Cambria, "Times New Roman", Times, serif !default;
 $font-monospace: Consolas, "Liberation Mono", Courier, monospace !default;
 
-$font-size-h1:            floor($base-font-size * 2.25) !default; // ~36px
-$font-size-h2:            floor($base-font-size * 1.875) !default; // ~30px
-$font-size-h3:            ceil($base-font-size * 1.5) !default; // ~24px
-$font-size-h4:            ceil($base-font-size * 1.125) !default; // ~18px
-$font-size-h5:            $base-font-size !default;
-$font-size-h6:            ceil($base-font-size * 0.75) !default; // ~12px calcu
+$font-size-h1: remCalc(36) !default;
+$font-size-h2: remCalc(30) !default;
+$font-size-h3: remCalc(24) !default;
+$font-size-h4: remCalc(18) !default;
+$font-size-h5: $base-font-size !default;
+$font-size-h6: remCalc(12) !default; // ~12px calcu
 
 // Tables
 // -------------------------
 
-$table-cell-padding:                 0.5rem !default;
+$table-cell-padding:                 8px !default;
 $table-bg:                           transparent !default;
 $table-head-bg:                      $gray-lighter !default;
 $table-bg-hover:                     lighten($black, 97.5%) !default;;
@@ -70,6 +75,10 @@ $btn-default-color:              $gray-dark !default;
 $btn-default-bg:                 transparent !default;
 $btn-default-border:             $gray-dark !default;
 
+$btn-default-inverse-color:              $white !default;
+$btn-default-inverse-bg:                 transparent !default;
+$btn-default-inverse-border:             $white !default;
+
 $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             darken($btn-primary-bg, 5%) !default;
@@ -78,9 +87,9 @@ $btn-success-color:              #fff !default;
 $btn-success-bg:                 $brand-success !default;
 $btn-success-border:             darken($btn-success-bg, 5%) !default;
 
-$btn-alert-color:              #fff !default;
-$btn-alert-bg:                 $brand-alert !default;
-$btn-alert-border:             darken($btn-alert-bg, 5%) !default;
+$btn-alert-color:                #fff !default;
+$btn-alert-bg:                   $brand-alert !default;
+$btn-alert-border:               darken($btn-alert-bg, 5%) !default;
 
 $btn-info-color:                 #fff !default;
 $btn-info-bg:                    $brand-info !default;
@@ -101,7 +110,6 @@ $input-height-base:           2.75rem !default;
 
 // Code
 // ------------------------
-$pre-font-size:               0.875rem !default;
 $pre-bg:                      lighten($gray, 62%) !default;
 $pre-color:                   $gray-dark !default;
 $pre-border-color:            $gray-light !default;
@@ -124,5 +132,4 @@ $breakpoint-large: "only screen and (min-width: 64.063em)";
 
 // Hr border color
 $hr-border:                   $gray-lighter !default;
-
 

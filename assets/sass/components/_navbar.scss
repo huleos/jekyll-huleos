@@ -2,34 +2,33 @@
 // Navbar
 // --------------------------------------------------
 
-.nav{
-	> li{
-		>a{
-			position: relative;
-			display: block;
-			padding: 10px 15px;
-		}
-	}
-}
+// .nav{
+// 	> li{
+// 		>a{
+// 			position: relative;
+// 			display: block;
+// 			padding: 10px 15px;
+// 		}
+// 	}
+// }
 
 .navbar{
 	position: relative;
 	min-height: 50px;
 	background-color: $gray-lighter;
-	>ul{
+	ul{
 		float: left;
 		margin: 0;
 		padding-left: 0;
 		margin-bottom: 0;
 		list-style: none;
-		>li{
+		li{
 			float: left;
 			position: relative;
-			> a{
+			a{
 				color: $gray-light;
 				display: block;
-				padding: 15px 15px;
-				line-height: 20px;
+				padding: 13px 15px;
 				&:hover{
 					text-decoration: none;
 					background-color: lighten($gray, 58%);
@@ -44,23 +43,79 @@
 	}
 }
 
-.nav-brand{
+.navbar-header{
 	float: left;
-	padding: 15px 15px;
-	line-height: 20px;
-	display: block;
-	color: $gray-dark;
-	&:hover{
-		text-decoration:none;
+	.nav-brand{
+		float: left;
+		padding: 13px 15px;
+		display: block;
+		color: $white;
+		background-color: $gray-darker;
+		&:hover{
+			text-decoration:none;
+		}
 	}
 }
 
+.navbar-toggle{
+	display: none;
+}
+
 @media #{$breakpoint-small-only} {
-	.navbar{
-		height: 100px;
+
+	.navbar-header{
+		float: none;
 	}
-	.nav-brand{
+
+	.navbar-toggle{
+		text-transform: uppercase;
+		font-size: remCalc(12);
+		font-weight: bold;
+		position: relative;
+		display: block;
+		padding: 0 40px 0 15px;
+		height: 50px;
+		line-height: 48px;
+		float: right;
+		&:hover{
+			text-decoration: none;
+			}
+		&:after{
+			content: "";
+			position: absolute;
+			top: 50%;
+			margin-top: -8px;
+			right: 15px;
+			box-shadow: 0 0px 0 1px $brand-primary, 0 7px 0 1px $brand-primary, 0 14px 0 1px $brand-primary;
+			width: 16px;
+		}
+	}
+
+	.navbar-collapse{
+		overflow: hidden;
 		width: 100%;
-		text-align: center;
+		ul{
+			float: none !important;
+		}
+		&.open{
+			ul{
+				width: 100%;
+				@include clearfix;
+			}
+			li{
+					height: 50px;
+			}
+		}
+		li{
+			overflow: hidden;
+			-webkit-transition: all 0.2s linear;
+			-moz-transition: all 0.2s linear;
+			transition: all 0.2s linear;
+			height: 0;
+			width: 100%;
+		}
+	}
+	.navbar{
+		height: inherit;
 	}
 }

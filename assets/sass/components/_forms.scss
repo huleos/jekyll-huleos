@@ -10,7 +10,7 @@
 label {
 	display: inline-block;
 	max-width: 100%;
-	margin-bottom: 0.625rem;
+	margin-bottom: 10px;
 }
 
 input[type="text"],
@@ -31,7 +31,7 @@ textarea{
 	display: block;
 	width: 100%;
 	height: $input-height-base;
-	padding: 0.5rem 0.75rem;
+	padding: 8px 12px;
 	font-size: $base-font-size;
 	line-height: $base-line-height;
 	color: $input-color;
@@ -65,7 +65,7 @@ select {
 	display: block;
 	width: 100%;
 	height: $input-height-base;
-	padding: 0.5rem 0.75rem;
+	padding: 8px 12px;
 	font-size: $base-font-size;
 	line-height: $base-line-height;
 	border: 1px solid $input-border;
@@ -75,13 +75,13 @@ select {
 .radio, .checkbox {
 	position: relative;
 	display: block;
-	min-height: 1.25rem;
-	margin-top: 0.625rem;
-	margin-bottom: 0.625rem;
+	min-height: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .radio label, .checkbox label {
-	padding-left: 1.25rem;
+	padding-left: 20px;
 	margin-bottom: 0;
 	font-weight: normal;
 	cursor: pointer;
@@ -92,8 +92,8 @@ select {
 .checkbox input[type=checkbox],
 .checkbox-inline input[type=checkbox] {
 	position: absolute;
-	margin-top: 4px \9;
-	margin-left: -1.25rem;
+	margin-top: 5px;
+	margin-left: -20px;
 }
 
 input[type="file"] {
