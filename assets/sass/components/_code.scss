@@ -14,7 +14,7 @@ samp {
 // Blocks of code
 pre {
 	display: block;
-	font-size: 13px;
+	font-size: remCalc(13);
 	line-height: $base-line-height;
   word-break: break-all;
   word-wrap: break-word;
@@ -28,4 +28,10 @@ pre {
     white-space: pre-wrap;
     border-radius: 0;
   }
+}
+
+code {
+    padding: remCalc(2) remCalc(5);
+    background-color: #f8f8f8;
+    border: 1px solid $gray-lighter;
 }
