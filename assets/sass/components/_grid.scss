@@ -13,8 +13,8 @@
 	@include clearfix();
 	.row{
 		width: auto;
-    margin-left: -0.9375em;
-    margin-right: -0.9375em;
+    margin-left: -$grid-gutter;
+    margin-right: -$grid-gutter;
     margin-top: 0;
     margin-bottom: 0;
     max-width: none;
@@ -25,8 +25,8 @@
 
 .col{
 	position: relative;
-  padding-left: 0.9375em;
-  padding-right: 0.9375em;
+  padding-left: $grid-gutter;
+  padding-right: $grid-gutter;
   width: 100%;
   float: left;
 }
