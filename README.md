@@ -1,4 +1,4 @@
-##Initial [Jekyll](http://jekyllrb.com/) with [LightCss](https://github.com/huleos/lightcss/archive/master.zip)
+##Initial [Jekyll](http://jekyllrb.com/) with [Huleos](https://github.com/huleos/huleos.github.io/archive/master.zip)
 
 ### MIT Open Source License
 

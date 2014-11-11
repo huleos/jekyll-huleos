@@ -1,4 +1,4 @@
-/* LightCss is a small “mobile first” CSS framework was made by Julio Cesar Montenegro web designer and front-end */
+/* Huleos is a small “mobile first” CSS framework was made by Julio Cesar Montenegro web designer and front-end */
 /* humanstxt.org */
 
 /* TEAM */

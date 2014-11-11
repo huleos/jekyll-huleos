@@ -2,19 +2,9 @@
 // Navbar
 // --------------------------------------------------
 
-// .nav{
-// 	> li{
-// 		>a{
-// 			position: relative;
-// 			display: block;
-// 			padding: 10px 15px;
-// 		}
-// 	}
-// }
-
 .navbar{
 	position: relative;
-	min-height: 50px;
+	min-height: remCalc(50);
 	background-color: $gray-lighter;
 	ul{
 		float: left;
@@ -28,7 +18,7 @@
 			a{
 				color: $gray-light;
 				display: block;
-				padding: 13px 15px;
+				padding: remCalc(13) remCalc(15);
 				&:hover{
 					text-decoration: none;
 					background-color: lighten($gray, 58%);
@@ -47,7 +37,7 @@
 	float: left;
 	.nav-brand{
 		float: left;
-		padding: 13px 15px;
+		padding: remCalc(13) remCalc(15);
 		display: block;
 		color: $white;
 		background-color: $gray-darker;
@@ -73,9 +63,9 @@
 		font-weight: bold;
 		position: relative;
 		display: block;
-		padding: 0 40px 0 15px;
-		height: 50px;
-		line-height: 48px;
+		padding: 0 remCalc(40) 0 remCalc(15);
+		height: remCalc(50);
+		line-height: remCalc(45);
 		float: right;
 		&:hover{
 			text-decoration: none;
@@ -84,10 +74,10 @@
 			content: "";
 			position: absolute;
 			top: 50%;
-			margin-top: -8px;
-			right: 15px;
-			box-shadow: 0 0px 0 1px $brand-primary, 0 7px 0 1px $brand-primary, 0 14px 0 1px $brand-primary;
-			width: 16px;
+			margin-top: remCalc(-8);
+			right: remCalc(15);
+			box-shadow: 0 0px 0 1px $brand-primary, 0 5px 0 1px $brand-primary, 0 10px 0 1px $brand-primary;
+			width: remCalc(16);
 		}
 	}
 
@@ -103,7 +93,7 @@
 				@include clearfix;
 			}
 			li{
-					height: 50px;
+					height: remCalc(50);
 			}
 		}
 		li{

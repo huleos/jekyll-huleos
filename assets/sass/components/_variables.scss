@@ -60,7 +60,7 @@ $font-size-h6: remCalc(12) !default; // ~12px calcu
 // Tables
 // -------------------------
 
-$table-cell-padding:                 8px !default;
+$table-cell-padding:                 remCalc(8) !default;
 $table-bg:                           transparent !default;
 $table-head-bg:                      $gray-lighter !default;
 $table-bg-hover:                     lighten($black, 97.5%) !default;;
@@ -104,9 +104,9 @@ $btn-link-disabled-color:        $gray-light !default;
 $input-bg:                    $white !default;
 $input-color:                 $gray !default;
 $input-border:                #ccc !default;
-$input-border-focus:          #66afe9 !default;
+$input-border-focus:          $gray !default;
 $input-color-placeholder:     $gray-light !default;
-$input-height-base:           2.75rem !default;
+$input-height-base:           remCalc(42) !default;
 
 // Code
 // ------------------------
@@ -133,4 +133,10 @@ $breakpoint-large: "only screen and (min-width: 64.063em)";
 
 // Hr border color
 $hr-border:                   $gray-lighter !default;
+
+// Breadcrumbs
+// -------------------------
+$breadcrumb-color:            #ccc !default;
+$breadcrumb-active-color:     $gray-light !default;
+$breadcrumb-separator:        "/" !default;
 

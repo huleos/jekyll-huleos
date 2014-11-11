@@ -1,6 +1,6 @@
 ---
 ---
-/*! LightCss v0.1.0 | jcmontenegro.me *//*! LightCss v0.1.0 | jcmontenegro.me */
+/*! Huleos v0.1.0 | jcmontenegro.me */
 @charset "UTF-8";
 
 // Core variables and mixins
@@ -19,6 +19,8 @@
 @import "components/tables";
 @import "components/forms";
 @import "components/buttons";
+@import "components/flex-video";
+@import "components/breadcrumbs";
 
 // Components
 @import "components/navbar";

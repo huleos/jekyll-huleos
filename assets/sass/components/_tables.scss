@@ -9,7 +9,7 @@ table{
 	border-collapse: collapse;
 	border-spacing: 0;
 	empty-cells: show;
-	margin-bottom: 15px;
+	margin-bottom: remCalc(15);
 	>thead{
 		background-color: $table-head-bg;
 		>tr{

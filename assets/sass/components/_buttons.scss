@@ -14,7 +14,7 @@
 	white-space: nowrap;
 	font-size: $rem-base;
 	line-height: $base-line-height;
-	padding: 16px 32px;
+	padding: remCalc(16) remCalc(32);
 	user-select: none;
 	@include transition(background-color 300ms ease-out);
 
