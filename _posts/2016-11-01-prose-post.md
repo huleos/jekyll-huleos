@@ -1,5 +1,8 @@
 ---
 published: false
+layout: post
+title: Prose post
+description: post with Prose.io
 ---
 ## A New Post
 
