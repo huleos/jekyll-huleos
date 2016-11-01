@@ -1,8 +1,9 @@
 ---
-published: false
+published: true
 layout: post
 title: Prose post
 description: post with Prose.io
+categories: blog
 ---
 ## A New Post
 
